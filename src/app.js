@@ -1,22 +1,21 @@
 /* eslint-disable */
 import "./style.css";
 
+let who = ["The dog", "My grandma", "The mailman", "My bird"];
+let action = ["ate", "peed", "crushed", "broke"];
+let what = ["my homework", "my phone", "the car"];
+let when = [
+  "before the class",
+  "when I was sleeping",
+  "while I was exercising",
+  "during my lunch",
+  "while I was praying"
+];
 window.onload = () => {
   document.querySelector("#excuse").innerHTML = generateExcuse();
-  console.log("hello i am jampiier25");
+  console.log("TRAVESURA TERMINADA");
 };
 let generateExcuse = () => {
-  let who = ["The dog", "My grandma", "The mailman", "My bird"];
-  let action = ["ate", "peed", "crushed", "broke"];
-  let what = ["my homework", "my phone", "the car"];
-  let when = [
-    "before the class",
-    "when I was sleeping",
-    "while I was exercising",
-    "during my lunch",
-    "while I was praying"
-  ];
-
   let whoIndex = Math.floor(Math.random() * who.length);
   let actionIndex = Math.floor(Math.random() * action.length);
   let whatIndex = Math.floor(Math.random() * what.length);
@@ -32,3 +31,8 @@ let generateExcuse = () => {
     when[whenIndex]
   );
 };
+let button = document.getElementById("btn");
+button.addEventListener("click", obtenerExcusa);
+function obtenerExcusa() {
+  document.querySelector("#excuse").innerHTML = generateExcuse();
+}
