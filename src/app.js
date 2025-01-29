@@ -1,6 +1,11 @@
 /* eslint-disable */
 import "./style.css";
 
+window.onload = () => {
+  document.querySelector("#excuse").innerHTML = generateExcuse();
+  console.log("TRAVESURA TERMINADA");
+};
+
 let who = ["The dog", "My grandma", "The mailman", "My bird"];
 let action = ["ate", "peed", "crushed", "broke"];
 let what = ["my homework", "my phone", "the car"];
@@ -11,10 +16,6 @@ let when = [
   "during my lunch",
   "while I was praying"
 ];
-window.onload = () => {
-  document.querySelector("#excuse").innerHTML = generateExcuse();
-  console.log("TRAVESURA TERMINADA");
-};
 let generateExcuse = () => {
   let whoIndex = Math.floor(Math.random() * who.length);
   let actionIndex = Math.floor(Math.random() * action.length);
