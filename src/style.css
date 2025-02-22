@@ -2,6 +2,35 @@
 body {
   font-size: 250%;
 }
+
+div.containerdos:hover {
+  transform: scale(1.4);
+}
+
 div.containerdos {
-  color: rgb(91, 91, 102);
+  transition: 1.9s;
+  color: rgb(8, 8, 201);
+}
+#btn {
+  transition: 0.7s;
+  border-radius: 15px;
+}
+#excuse {
+  border-box: 1px;
+  border-radius: 1px;
+}
+
+#btn:hover {
+  transform: scale(1.2);
+  background-color: rgb(218, 197, 11);
+}
+.btndos {
+  border-radius: 15px;
+  background-color: rgb(47, 161, 206);
+  transition: 0.7s;
+}
+.btndos:hover {
+  background-color: rgb(0, 238, 255);
+  transform: scale(1.2);
+  transform-box: fill-box;
 }
